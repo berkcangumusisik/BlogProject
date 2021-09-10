@@ -1,0 +1,15 @@
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\bin\Debug\net5.0\CoreLayer.deps.json
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\bin\Debug\net5.0\CoreLayer.dll
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\bin\Debug\net5.0\ref\CoreLayer.dll
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\bin\Debug\net5.0\CoreLayer.pdb
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfo.cs
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\bin\Debug\net5.0\CoreLayer.runtimeconfig.json
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\bin\Debug\net5.0\CoreLayer.runtimeconfig.dev.json
+C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\CoreLayer\obj\Debug\net5.0\CoreLayer.genruntimeconfig.cache
