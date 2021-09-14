@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\BERKCAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BERKCAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\BERKCAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BERKCAN\\AppData\\Roaming\\NuGet\\NuGet.Config",

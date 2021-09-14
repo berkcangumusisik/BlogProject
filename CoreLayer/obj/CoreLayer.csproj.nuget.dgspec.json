@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\CoreLayer\\CoreLayer.csproj": {}
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\CoreLayer\\CoreLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\CoreLayer\\CoreLayer.csproj": {
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\CoreLayer\\CoreLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\CoreLayer\\CoreLayer.csproj",
+        "projectUniqueName": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\CoreLayer\\CoreLayer.csproj",
         "projectName": "CoreLayer",
-        "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\CoreLayer\\CoreLayer.csproj",
+        "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\CoreLayer\\CoreLayer.csproj",
         "packagesPath": "C:\\Users\\BERKCAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\CoreLayer\\obj\\",
+        "outputPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\CoreLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BERKCAN\\AppData\\Roaming\\NuGet\\NuGet.Config",

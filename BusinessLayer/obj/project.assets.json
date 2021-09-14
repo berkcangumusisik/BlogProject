@@ -5742,11 +5742,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\BERKCAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BERKCAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5763,11 +5763,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

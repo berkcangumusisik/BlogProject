@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xb1vjNMN//aWHANqp0EviFNbAs4taCc4TsmfmIneXoTLAcHbRHWcT/NXDVeXASPXaCD228dG9xrobWqbmnmiiQ==",
+  "dgSpecHash": "2N+0buy4NLXvmZGzFzh596gbk9DKjjorQ7lwrRiUsedum6O6hutva4FgzcRRqI0PDS7pvSK3GyGKajdHi2zbJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

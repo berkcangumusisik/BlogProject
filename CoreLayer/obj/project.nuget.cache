@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QpFdkuD1z+2PyddMxLrn3mx9FyNN9/IKkPlQzjKpCu4gJoiMdK4IYN7X21K2sTUNR7TA1WJSMsvVoHNM+ukCNA==",
+  "dgSpecHash": "G30axu5546wKI76pvGZsEOImpa4ACa3y0imFPaDRjbHb/yTRe/X6DTA5QXJwQV4sXNWyvkWrRAzpy8oID3nzoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\CoreLayer\\CoreLayer.csproj",
+  "projectFilePath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\CoreLayer\\CoreLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BERKCAN\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

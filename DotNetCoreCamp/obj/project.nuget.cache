@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j82z7o2pCSdk1OZIxYfz19uWXt36XpisQ4DC1EmINFtGE7wDpBB6rnFgPrSDHSRjCrQOmFXebTBPm5k4dwbQJw==",
+  "dgSpecHash": "0b/zHJFA0v/fqiiwDw7D9zm6BdomUmOw+2cGySMOXERF8Ytr9m5UrtdbjPboF95HvdEkpIbnewEm+rk8aMV5nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
+  "projectFilePath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BERKCAN\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

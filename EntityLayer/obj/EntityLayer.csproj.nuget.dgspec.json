@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\BERKCAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BERKCAN\\AppData\\Roaming\\NuGet\\NuGet.Config",

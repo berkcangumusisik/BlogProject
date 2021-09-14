@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tLJ2zgFhfusSGHWGctWXm/BCjpKCTPCdoejRboA3XIfdq2EbP1PAZYSfEcKfkkYdHZBkGp93xEqxb/nfZuIEig==",
+  "dgSpecHash": "6j4UvZmtdQz0LMiH0UVoT8Co2llKPSU2ZKR/W6vZuHnpkVGvCbGhIpbHLdyxPbPS3QoHz66UyxHC8lOEjOfjjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BERKCAN\\Desktop\\kodlar\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -10,3 +10,15 @@ C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\Enti
 C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
 C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\BERKCAN\Desktop\kodlar\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
