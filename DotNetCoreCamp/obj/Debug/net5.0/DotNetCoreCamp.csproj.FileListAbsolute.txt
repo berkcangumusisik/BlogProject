@@ -601,3 +601,9 @@ C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Ra
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentList\Default.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentListByBlog\Default.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryList\Default.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Register\Index.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterLastBlog\Default.cshtml.g.cs

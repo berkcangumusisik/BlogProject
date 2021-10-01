@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Ei5bWE6VH4I3PSyMj2iwPRx0Zr9RjDXA7HSIn3DglsVVNHB3wfMio0bxQLSyptQlYaQ0dA4013ClsZFr999L1A==",
+  "dgSpecHash": "0+hEJbRXpyQfdjuW/Qmuas7JniY36G7e6oXGo8kGnadUlzMQfQWGJ5BeHFYC7J8ttBWjw6B6ChDrspd058PzNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BERKCAN\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.10\\microsoft.aspnetcore.mvc.razor.extensions.5.0.10.nupkg.sha512",
