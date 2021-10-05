@@ -1,14 +1,9 @@
 ﻿@model IEnumerable<EntityLayer.Concrete.Blog>
-
 @{
     ViewData["Title"] = "BlogDetails";
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
-
-
-<html lang="zxx">
 <body>
-
 
     <!--//banner-->
     <section class="banner-bottom">
@@ -23,19 +18,19 @@
                             <div class="b-grid-top">
                                 <div class="blog_info_left_grid">
                                     <a href="single.html">
-                                        <img src="~/CoreBlogTema/images/b1.jpg" class="img-fluid" alt="">
+                                        <img src="/CoreBlogTema/images/b1.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-info-middle">
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <i class="far fa-calendar-alt"></i> @(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))
+                                                <i class="far fa-calendar-alt"></i> FEB 15,2018
                                             </a>
                                         </li>
                                         <li class="mx-2">
                                             <a href="#">
-                                                <i class="far fa-thumbs-up"></i> 0 Beğeni
+                                                <i class="far fa-thumbs-up"></i> 201 Beğeni
                                             </a>
                                         </li>
                                         <li>
@@ -54,12 +49,11 @@
                             <p>
                                 @item.BlogContent
                             </p>
-                            <a href="/Blog/Index/" class="btn btn-primary read-m">Blog Listesi</a>
+                            <a href="/Blog/Index" class="btn btn-primary read-m">Blog Listesi</a>
                         </div>
                     }
-                    
                     @await Component.InvokeAsync("CommentListByBlog", new { id = ViewBag.i })
-                    @*@await Html.PartialAsync("~/Views/Comment/CommentListByBlog.cshtml")*@
+
                     @await Html.PartialAsync("~/Views/Comment/PartialAddComment.cshtml")
 
                 </div>
@@ -68,14 +62,14 @@
                 <!--right-->
                 <aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
                     <div class="right-blog-info text-left">
-                        <div class="tech-btm">
-                            <img src="images/banner1.jpg" class="img-fluid" alt="">
-                        </div>
+
 
                         @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+
                         @await Component.InvokeAsync("CategoryList")
-                        
+
                         @await Component.InvokeAsync("WriterLastBlog")
+
 
                         <div class="single-gd my-5 tech-btm">
                             <h4>Our Progress</h4>
@@ -101,7 +95,7 @@
                             </div>
                         </div>
                         <div class="single-gd tech-btm">
-                            <h4>Recent Post</h4>
+                            <h4>Son Eklenen Post</h4>
                             <div class="blog-grids">
                                 <div class="blog-grid-left">
                                     <a href="single.html">
@@ -122,10 +116,10 @@
                 </aside>
                 <!--//right-->
             </div>
-
         </div>
     </section>
 
-</body>
 
-</html>
+
+
+</body>

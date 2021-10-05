@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Abstract
+namespace BusinessLayer.Abstract
 {
-    public interface IAboutDal : IGenericDal<About>
+    public interface IContactService
     {
+        void ContactAdd(Contact contact);
+
     }
 }
