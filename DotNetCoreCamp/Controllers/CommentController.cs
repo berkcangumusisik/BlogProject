@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
@@ -12,24 +13,28 @@ namespace DotNetCoreCamp.Controllers
     public class CommentController : Controller
     {
         CommentManager cm = new CommentManager(new EfCommentRepository());
+
+
+
         public IActionResult Index()
         {
             return View();
         }
         [HttpGet]
-        public PartialViewResult PartialAddComment()
+        public IActionResult PartialAddComment()
         {
-            return PartialView();
+            return View();
         }
         [HttpPost]
 
-        public PartialViewResult PartialAddComment(Comment p)
+        public IActionResult PartialAddComment(Comment p)
         {
             p.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             p.CommentStatus = true;
             p.BlogID = 2;
             cm.CommentAdd(p);
-            return PartialView();
+            return RedirectToAction("BlogReadAll", "Blog", new { id = p.BlogID });
+
         }
         public PartialViewResult CommentListByBlog(int id)
         {
