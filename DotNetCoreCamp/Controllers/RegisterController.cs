@@ -46,6 +46,7 @@ namespace DotNetCoreCamp.Controllers
             {
                 ModelState.AddModelError("WriterPassword", "Girdiğiniz Şifreler Eşleşmedi Lütfen Tekrar Deneyin");
             }
+            ViewBag.Cities = GetCityList();
             return View();
         }
 
