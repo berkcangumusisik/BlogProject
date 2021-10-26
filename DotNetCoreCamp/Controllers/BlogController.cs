@@ -16,6 +16,8 @@ namespace DotNetCoreCamp.Controllers
     public class BlogController : Controller
     {
         BlogManager bm = new BlogManager(new EfBlogRepository());
+        CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+
         public IActionResult Index()
         {
             var values = bm.GetBlogListWithCategory();
@@ -65,7 +67,6 @@ namespace DotNetCoreCamp.Controllers
         }
         public void GetCategoryList()
         {
-            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
             List<SelectListItem> CategoryValues = (from x in cm.GetList()
                                                    select new SelectListItem
                                                    {
@@ -73,6 +74,43 @@ namespace DotNetCoreCamp.Controllers
                                                        Value = x.CategoryID.ToString()
                                                    }).ToList();
             ViewBag.cv = CategoryValues;
+        }
+
+        public IActionResult DeleteBlog(int id)
+        {
+            var blogvalue = bm.TGetByID(id);
+            bm.TDelete(blogvalue);
+            return RedirectToAction("BlogListByWriter");
+        }
+        [HttpGet]
+        public IActionResult EditBlog(int id)
+        {
+            var blogValue = bm.TGetByID(id);
+            GetCategoryList();
+            return View(blogValue);
+        }
+        [HttpPost]
+        public IActionResult EditBlog(Blog blog)
+        {
+            BlogValidator bv = new BlogValidator();
+            ValidationResult results = bv.Validate(blog);
+            if (results.IsValid)
+            {
+                var value = bm.TGetByID(blog.BlogID);
+                blog.WriterID = 1;
+                blog.BlogCreateDate = value.BlogCreateDate;
+                bm.TUpdate(blog);
+                return RedirectToAction("BlogListByWriter");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            GetCategoryList();
+            return View();            
         }
     }
 }

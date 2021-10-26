@@ -1,0 +1,38 @@
+﻿@model EntityLayer.Concrete.Blog
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Blog Düzenleme Sayfası</h1>
+<br />
+@using (Html.BeginForm("EditBlog", "Blog", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.BlogID, new { @class = "form-control" })
+    @Html.Label("Güncellemek İstediğiniz Başlığı Giriniz!")
+    @Html.TextBoxFor(x => x.BlogTitle, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogTitle, "", new { @class = "text-danger" })
+
+    <br />
+    @Html.Label("Güncellemek İstediğiniz Thumbnail Url Adresini Giriniz!")
+    @Html.TextBoxFor(x => x.BlogThumbNailImage, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogThumbNailImage, "", new { @class = "text-danger" })
+    <br />
+    @Html.Label("Güncellemek İstediğiniz Görselin Linkini Giriniz!")
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogImage, "", new { @class = "text-danger" })
+
+    <br />
+    @Html.Label("Güncellemek İstediğiniz Kategoriyi Seçiniz!")
+    @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.cv, new { @class = "form-control" })
+    <br />
+    @Html.Label("Güncellemek İstediğiniz İçeriği Giriniz!")
+    @Html.TextAreaFor(x => x.BlogContent, 10, 3, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogContent, "", new { @class = "text-danger" })
+
+    <br />
+    @Html.Label("Blog Durumu (Aktif/Pasif)")
+    @Html.CheckBoxFor(x => x.BlogStatus, new { @class = "form-check" })
+    <br />
+    <button class="btn btn-outline-success">Güncelle</button>
+}
