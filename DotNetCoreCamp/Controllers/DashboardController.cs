@@ -10,6 +10,7 @@ namespace DotNetCoreCamp.Controllers
     {
         public IActionResult Index()
         {
+
             return View();
         }
     }

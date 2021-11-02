@@ -631,3 +631,4 @@ C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Ra
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\BlogListDashboard\Default.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryListDashboard\Default.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterAboutOnDashboard\Default.cshtml.g.cs
