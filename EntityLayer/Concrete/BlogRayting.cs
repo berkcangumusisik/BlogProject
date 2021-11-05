@@ -12,6 +12,6 @@ namespace EntityLayer.Concrete
         public int BlogID { get; set; }
         public int BlogTotalScore { get; set; }
         public int BlogRaytingCount { get; set; }
-        public int BlogRaytingAverage { get; set; }
+        public float BlogRaytingAverage { get; set; }
     }
 }

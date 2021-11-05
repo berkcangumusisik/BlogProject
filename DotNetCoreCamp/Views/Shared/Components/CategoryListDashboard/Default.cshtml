@@ -22,7 +22,16 @@
 
                                     <td> @item.CategoryID </td>
                                     <td> @item.CategoryName </td>
-                                    <td> @item.CategoryStatus </td>
+                                    <td>
+                                        @if (item.CategoryStatus)
+                                        {
+                                            <p class="badge badge-primary">Aktif</p>
+                                        }
+                                        else
+                                        {
+                                            <p class="badge badge-secondary">Pasif</p>
+                                        }
+                                    </td>
                                     <td>
                                         <div class="progress">
                                             <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
