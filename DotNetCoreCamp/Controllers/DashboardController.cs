@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Concrete;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,10 +13,11 @@ namespace DotNetCoreCamp.Controllers
     {
         public IActionResult Index()
         {
-            Context c = new Context();
-            ViewBag.v1 = c.Blogs.Count().ToString();
-            ViewBag.v2 = c.Blogs.Where(x=>x.WriterID ==1).Count();
-            ViewBag.v3 = c.Categories.Count();
+            BlogManager blogManager = new BlogManager(new EfBlogRepository());
+            CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
+            ViewBag.ToplamBlogSayisi = blogManager.GetList().Count();
+            ViewBag.YazarinBlogSayisi = blogManager.GetBlogListByWriter(1).Count();
+            ViewBag.KategoriSayisi = categoryManager.GetList().Count();
             return View();
         }
     }

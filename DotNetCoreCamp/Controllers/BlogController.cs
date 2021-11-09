@@ -82,6 +82,20 @@ namespace DotNetCoreCamp.Controllers
             bm.TDelete(blogvalue);
             return RedirectToAction("BlogListByWriter");
         }
+        public IActionResult ChangeStatusBlog(int id)
+        {
+            var blogValue = bm.TGetByID(id);
+            if (blogValue.BlogStatus)
+            {
+                blogValue.BlogStatus = false;
+            }
+            else
+            {
+                blogValue.BlogStatus = true;
+            }
+            bm.TUpdate(blogValue);
+            return RedirectToAction("BlogListByWriter");
+        }
         [HttpGet]
         public IActionResult EditBlog(int id)
         {

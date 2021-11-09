@@ -15,31 +15,44 @@
         <th>Durum</th>
         <th>Sil</th>
         <th>Düzenle</th>
+        <th>Durumunu Değiştir</th>
 
 
     </tr>
     @foreach (var item in Model)
     {
-<tr>
-    <th>@item.BlogID</th>
-    <td>@item.BlogTitle</td>
-    <td> @(((DateTime)item.BlogCreateDate).ToString("dd MMMM yyyy"))</td>
-    <td>@item.Category.CategoryName</td>
-    <td>
-        @if (item.BlogStatus)
-        {
-            <span class="badge badge-success">Aktif</span>
-        }
-        else
-        {
-            <span class="badge badge-secondary">Pasif</span>
-        }
-    <td>@Html.ActionLink("Sil", "DeleteBlog", new { id = item.BlogID }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Silmek İstediğinize Eminmisiniz?')" })</td>
-    
-    <td><a href="/Blog/EditBlog/@item.BlogID" class="btn btn-outline-warning">Güncelle</a></td>
-</tr>
+        <tr>
+            <th>@item.BlogID</th>
+            <td>@item.BlogTitle</td>
+            <td> @(((DateTime)item.BlogCreateDate).ToString("dd MMMM yyyy"))</td>
+            <td>@item.Category.CategoryName</td>
+            <td>
+                @if (item.BlogStatus)
+                {
+                    <span class="badge badge-success">Aktif</span>
+                }
+                else
+                {
+                    <span class="badge badge-secondary">Pasif</span>
+                }
+            <td>@Html.ActionLink("Sil", "DeleteBlog", new { id = item.BlogID }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Silmek İstediğinize Eminmisiniz?')" })</td>
+
+            <td><a href="/Blog/EditBlog/@item.BlogID" class="btn btn-outline-warning">Güncelle</a></td>
+            <td>
+
+                @if (item.BlogStatus)
+                {
+                    <a href="~/Blog/ChangeStatusBlog/@item.BlogID" id="Durum_@item.BlogID" class="btn btn-gradient-secondary">Pasif Yap</a>
+                }
+                else
+                {
+                    <a href="~/Blog/ChangeStatusBlog/@item.BlogID" id="Durum_@item.BlogID" class="btn btn-gradient-success">Aktif Yap</a>
+                }
+
+            </td>
+        </tr>
     }
 
 </table>
 
-<a href="/Blog/BlogAdd/" class="btn btn-outline-info">Yeni Blog Oluştur</a>
+<a href="/Blog/BlogAdd/" class="btn btn-outline-info col-12">Yeni Blog Oluştur</a>
