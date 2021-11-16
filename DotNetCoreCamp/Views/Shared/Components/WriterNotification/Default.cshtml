@@ -1,9 +1,11 @@
 ﻿@using EntityLayer.Concrete
 @model List<Notification>
+
 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
     <h6 class="p-3 mb-0">Bildirimler</h6>
     @foreach (var item in Model)
     {
+        
         if (item.NotificationStatus == true)
         {
             <div class="dropdown-divider"></div>
@@ -20,6 +22,6 @@
             </a>
         }
     }
-        <div class="dropdown-divider"></div>
-        <h6 class="p-3 mb-0 text-center">Tüm bildirimleri gör</h6>
-    </div>
+    <div class="dropdown-divider"></div>
+    <a href="/Notification/AllNotification/"><h6 class="p-3 mb-0 text-center">Tüm bildirimleri gör</h6></a>
+</div>
