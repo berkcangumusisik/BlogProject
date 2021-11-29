@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7o/BOCvWVfKGgZREGSqbcdIWBYD9IcxUYYo8YFSsoG/gU4IyEeTsLHMmDUTfCHaNF3za6z90b1GGkL7UMqbCjw==",
+  "dgSpecHash": "Z4vNVnElu3NKI+CpFHQHF9D2aipGAfbbXVlN8iGRCQUsJPfOu0NVxBlrwdnZRw9N6wgwvL3H8IH+sOQK2+XryA==",
   "success": true,
   "projectFilePath": "C:\\Users\\BERKCAN\\Documents\\GitHub\\BlogProject\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\BERKCAN\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\jetbrains.annotations\\2021.1.0\\jetbrains.annotations.2021.1.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\jquery\\1.6.3\\jquery.1.6.3.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.10\\microsoft.aspnetcore.mvc.razor.extensions.5.0.10.nupkg.sha512",
@@ -169,7 +170,9 @@
     "C:\\Users\\BERKCAN\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\BERKCAN\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\BERKCAN\\.nuget\\packages\\toastr\\2.1.1\\toastr.2.1.1.nupkg.sha512"
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\toastr\\2.1.1\\toastr.2.1.1.nupkg.sha512",
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\x.pagedlist\\8.1.0\\x.pagedlist.8.1.0.nupkg.sha512",
+    "C:\\Users\\BERKCAN\\.nuget\\packages\\x.pagedlist.mvc.core\\8.1.0\\x.pagedlist.mvc.core.8.1.0.nupkg.sha512"
   ],
   "logs": []
 }

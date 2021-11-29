@@ -225,6 +225,14 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "toastr": {
               "target": "Package",
               "version": "[2.1.1, )"

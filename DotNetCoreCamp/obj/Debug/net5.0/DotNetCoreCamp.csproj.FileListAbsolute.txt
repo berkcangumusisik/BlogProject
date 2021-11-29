@@ -641,3 +641,7 @@ C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Ra
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Admin\AdminNavbarPartial.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\JetBrains.Annotations.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\X.PagedList.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\AddCategory.cshtml.g.cs

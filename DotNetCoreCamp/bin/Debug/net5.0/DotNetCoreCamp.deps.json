@@ -42,6 +42,8 @@
           "FluentValidation.AspNetCore": "10.3.3",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "X.PagedList": "8.1.0",
+          "X.PagedList.Mvc.Core": "8.1.0",
           "toastr": "2.1.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -432,6 +434,17 @@
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.0"
           }
+        }
+      },
+      "JetBrains.Annotations/2021.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "assemblyVersion": "2021.1.0.0",
+            "fileVersion": "2021.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {}
         }
       },
       "jQuery/1.6.3": {},
@@ -2258,6 +2271,34 @@
           "jQuery": "1.6.3"
         }
       },
+      "X.PagedList/8.1.0": {
+        "dependencies": {
+          "JetBrains.Annotations": "2021.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/X.PagedList.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/X.PagedList.dll": {}
+        }
+      },
+      "X.PagedList.Mvc.Core/8.1.0": {
+        "dependencies": {
+          "X.PagedList": "8.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/X.PagedList.Mvc.Core.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/X.PagedList.Mvc.Core.dll": {}
+        }
+      },
       "BusinessLayer/1.0.0": {
         "dependencies": {
           "DataAccessLayer": "1.0.0",
@@ -4036,6 +4077,13 @@
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
     },
+    "JetBrains.Annotations/2021.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n9JSw5Z+F+6gp9vSv4aLH6p/bx3GAYA6FZVq1wJq/TJySv/kPgFKLGFeS7A8Xa5X4/GWorh5gd43yjamUgnBNA==",
+      "path": "jetbrains.annotations/2021.1.0",
+      "hashPath": "jetbrains.annotations.2021.1.0.nupkg.sha512"
+    },
     "jQuery/1.6.3": {
       "type": "package",
       "serviceable": true,
@@ -5148,6 +5196,20 @@
       "sha512": "sha512-h/688XvzYk1xVYn213ryU+HCElE4n/drYzAHJkAi9LsSUPS3EbI6wGlvCglBUt7i4h5iESgAVarYaigjQmVpqg==",
       "path": "toastr/2.1.1",
       "hashPath": "toastr.2.1.1.nupkg.sha512"
+    },
+    "X.PagedList/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xBZNtE+WU6FEKEapLvIdTFn4h3Ue03dsBE1LfnhzsLFIrop5bX6f7UuXnsenG/QK1OPHYknkC0a0vPBAMo0bXQ==",
+      "path": "x.pagedlist/8.1.0",
+      "hashPath": "x.pagedlist.8.1.0.nupkg.sha512"
+    },
+    "X.PagedList.Mvc.Core/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nqz9rSjU/St77F25GV8TogDfkVsbErC0o6o8hJtkkXrAilXHjsEALRMn8eVhgAFJ3XFWvvaHHSiDN3SnTGWSEA==",
+      "path": "x.pagedlist.mvc.core/8.1.0",
+      "hashPath": "x.pagedlist.mvc.core.8.1.0.nupkg.sha512"
     },
     "BusinessLayer/1.0.0": {
       "type": "project",
