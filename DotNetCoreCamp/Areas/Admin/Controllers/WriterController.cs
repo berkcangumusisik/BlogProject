@@ -43,6 +43,13 @@ namespace DotNetCoreCamp.Areas.Admin.Controllers
             writers.Remove(writer);
             return Json(writer);
         }
+        public IActionResult UpdateWriter(WriterClass w)
+        {
+            var writer = writers.FirstOrDefault(x => x.Id == w.Id);
+            writer.Name = w.Name;
+            var jsonWriter = JsonConvert.SerializeObject(w);
+            return Json(jsonWriter);
+        }
         public static List<WriterClass> writers = new List<WriterClass>
         {
             new WriterClass
