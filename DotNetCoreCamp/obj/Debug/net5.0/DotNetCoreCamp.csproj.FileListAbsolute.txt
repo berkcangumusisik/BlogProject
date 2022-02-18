@@ -670,3 +670,4 @@ C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\Bl
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\BlogApiDemo.pdb
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\EmployeeTest\Index.cshtml.g.cs
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\EmployeeTest\AddEmployee.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\EmployeeTest\EditEmployee.cshtml.g.cs
