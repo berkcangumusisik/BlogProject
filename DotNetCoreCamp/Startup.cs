@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 
 namespace DotNetCoreCamp
 {
@@ -26,7 +28,9 @@ namespace DotNetCoreCamp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddDbContext<Context>();
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+            services.AddControllersWithViews();
             services.AddMvc(config =>
             {
                 var policy = new AuthorizationPolicyBuilder()

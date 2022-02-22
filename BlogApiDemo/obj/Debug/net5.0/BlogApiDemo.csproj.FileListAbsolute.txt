@@ -58,3 +58,4 @@ C:\Users\BERKCAN\Documents\GitHub\BlogProject\BlogApiDemo\obj\Debug\net5.0\BlogA
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\BlogApiDemo\obj\Debug\net5.0\ref\BlogApiDemo.dll
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.pdb
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.genruntimeconfig.cache
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.csproj.AssemblyReference.cache
