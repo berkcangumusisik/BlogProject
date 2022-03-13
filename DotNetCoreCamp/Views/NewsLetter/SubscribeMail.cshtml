@@ -1,8 +1,23 @@
 ﻿
-
 <div class="tech-btm">
+    <img src="/CoreBlogTema/images/banner1.jpg" class="img-fluid" alt="">
+</div>
+<div class="tech-btm">
+
     <p>Teknoloji, yazılım ve diğer bloglardan haber alın </p>
     <form action="/NewsLetter/SubscribeMail/" method="post">
-        <input type="email" placeholder="Email" required="" name="Mail">
-        <input type="submit" value="Abone ol">
- </form>
+        <input type="email" placeholder="Email" required="" id="txtmail" name="Mail">
+        <input type="submit" id="btn" value="Abone ol">
+    </form>
+</div>
+
+<script type="text/javascript">
+    $('#btn').click(function() {
+        let values = {
+            Mail: $("txtMail").val()
+        };
+        $.ajax({
+
+        })
+    })
+</script>

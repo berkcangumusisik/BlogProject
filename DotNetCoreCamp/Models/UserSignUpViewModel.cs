@@ -27,5 +27,6 @@ namespace DotNetCoreCamp.Models
         [Display(Name = "Kullanıcı Adı")]
         [Required(ErrorMessage = "Lütfen Kullanıcı Adınızı Giriniz.")]
         public string UserName { get; set; }
+        public bool IsAcceptTheContract { get; set; }
     }
 }
