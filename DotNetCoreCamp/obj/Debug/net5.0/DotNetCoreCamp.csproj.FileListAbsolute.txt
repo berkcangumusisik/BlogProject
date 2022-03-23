@@ -674,3 +674,5 @@ C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Do
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\DotNetCoreCamp.genruntimeconfig.cache
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\RegisterUser\Index.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Message\SendMessage.cshtml.g.cs
+C:\Users\BERKCAN\Documents\GitHub\BlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Message\SendBox.cshtml.g.cs

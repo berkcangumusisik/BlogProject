@@ -7,10 +7,9 @@
                     <span class="login-status online"></span>
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
-                    <span class="font-weight-bold mb-2">Yazar Adı Soyadı</span>
-                    <span class="text-secondary text-small">BÖTE Öğrencisi</span>
+                    <span class="font-weight-bold mb-2">@ViewBag.v Hoş Geldiniz</span>
+                    <span class="text-secondary text-small">Creative Blog Yazarı</span>
                 </div>
-                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
             </a>
         </li>
         <li class="nav-item">
@@ -38,9 +37,15 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Writer/WriterMessage/">
-                <span class="menu-title">Mesajlar</span>
+            <a class="nav-link" href="/Message/InBox/">
+                <span class="menu-title">Gelen Kutusu</span>
                 <i class="mdi mdi-message menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Message/SendBox/">
+                <span class="menu-title">Giden Kutusu</span>
+                <i class="mdi mdi-message-plus menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
@@ -62,7 +67,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Login/WriterLogOut/">
+            <a class="nav-link" href="/Login/LogOut/">
                 <span class="menu-title">Çıkış Yap</span>
                 <i class="mdi mdi-logout menu-icon"></i>
             </a>

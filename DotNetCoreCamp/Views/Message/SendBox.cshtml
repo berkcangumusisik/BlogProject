@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concrete
+@model List<Message2>
+@{
+    ViewData["Title"] = "SendBox";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+@*@{
+        string color = "";
+        string statusColor = "";
+        string checkStatus = "";
+        string buttonStatusColor = "";
+    }*@
+
+<h1>Giden Kutusu</h1>
+<br />
+<table class="table table-hover">
+    <tr>
+        <th>#</th>
+        <th>Konu</th>
+        <th>Alıcı</th>
+        <th>Tarih</th>
+        <th>Mesaj Durumu</th>
+        <th>Mesajı Aç</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.MessageID</th>
+            <td>@item.Subject</td>
+            <td>@item.ReceiverUser.WriterName</td>
+            <td> @(((DateTime)item.MessageDate).ToString("dd MMMM yyyy"))</td>
+            <td>
+                @if (item.MessageStatus)
+                {
+                    <span class="badge badge-info">Mesaj Okundu</span>
+                }
+                else
+                {
+                    <span class="badge badge-success">Mesaj Okunmadı</span>
+                }
+            </td>
+            <td><a href="/Message/MessageDetails/@item.MessageID" class="btn btn-outline-warning">Mesajı Aç</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Message/SendMessage/" class="btn btn-outline-info col-12">Yeni Mesaj Oluştur</a>

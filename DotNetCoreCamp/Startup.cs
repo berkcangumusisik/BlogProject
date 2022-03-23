@@ -11,8 +11,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
+using FluentValidation.AspNetCore;
 
 namespace DotNetCoreCamp
 {
@@ -56,6 +58,18 @@ namespace DotNetCoreCamp
 
 
                 );
+            services.ConfigureApplicationCookie(options =>
+            {
+                //Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(50);
+
+                options.LoginPath = "/Login/Index/";
+                options.SlidingExpiration = true;
+            });
+
+            services.AddControllersWithViews().AddFluentValidation(x =>
+                x.RegisterValidatorsFromAssemblyContaining<BlogValidator>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

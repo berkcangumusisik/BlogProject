@@ -40,7 +40,7 @@
                 sure = new DateTime(zaman.Ticks).ToString("d 'Gün' H 'saat önce'");
             }
         }
-        <a class="dropdown-item preview-item">
+        <a class="dropdown-item preview-item" href="/Message/MessageDetails/@item.MessageID">
             <div class="preview-thumbnail">
                 <img src="@item.SenderUser.WriterImage" alt="image" class="profile-pic">
             </div>
@@ -50,5 +50,4 @@
             </div>
         </a>
     }
-    <h6 class="p-3 mb-0 text-center">3 yeni mesaj</h6>
 </div>

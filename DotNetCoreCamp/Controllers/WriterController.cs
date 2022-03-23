@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
 namespace DotNetCoreCamp.Controllers
 {
@@ -20,14 +21,18 @@ namespace DotNetCoreCamp.Controllers
     {
         WriterManager wm = new WriterManager(new EfWriterRepository());
         Context c = new Context();
+        private readonly UserManager<AppUser> _userManager;
+
+        public WriterController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
 
         [Authorize]
         public IActionResult Index()
         {
-            var usermail = User.Identity.Name;
-            ViewBag.v = usermail;
-            var writername = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterName).FirstOrDefault();
-            ViewBag.v2 = writername;
+            var username = User.Identity.Name;
+            ViewBag.v3 = username;
             return View();
         }
         public IActionResult WriterProfile()
@@ -43,44 +48,42 @@ namespace DotNetCoreCamp.Controllers
         {
             return View();
         }
-        [AllowAnonymous]
         public PartialViewResult WriterNavbarPartial()
         {
+            var userName = User.Identity.Name;
+            ViewBag.v = userName;
             return PartialView();
         }
-        [AllowAnonymous]
         public PartialViewResult WriterFooterPartial()
         {
             return PartialView();
         }
         [HttpGet]
-        public IActionResult WriterEditProfile()
+        public async Task<IActionResult> WriterEditProfile()
         {
-            var usermail = User.Identity.Name;
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
-            var writervalues = wm.TGetByID(writerID);
-            return View(writervalues);
+            //var userName = User.Identity.Name;
+            //var usermail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
+            //UserManager userManager = new UserManager(new EfUserRepository());
+            //var id = c.Users.Where(x => x.Email == usermail).Select(y => y.Id).FirstOrDefault();
+            //var values = userManager.TGetByID(id);
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            UserUpdateViewModel model = new UserUpdateViewModel();
+            model.mail = values.Email;
+            model.namesurname = values.NameSurname;
+            model.username = values.UserName;
+            model.imageurl = values.ImageUrl;
+            return View(model);
         }
         [HttpPost]
-        public IActionResult WriterEditProfile(Writer p, string passwordAgain)
+        public async Task<IActionResult> WriterEditProfile(string PasswordAgain, UserUpdateViewModel model)
         {
-            WriterValidator wl = new WriterValidator();
-            ValidationResult results = wl.Validate(p);
-            if (results.IsValid && p.WriterPassword == passwordAgain)
-            {
-                p.WriterStatus = false;
-                wm.TUpdate(p);
-                return RedirectToAction("Index", "Dashboard");
-            }
-            else
-            {
-                foreach (var item in results.Errors)
-                {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
-                }
-
-            }
-            return View();
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            values.NameSurname = model.namesurname;
+            values.ImageUrl = model.imageurl;
+            values.Email = model.mail;
+            values.PasswordHash = _userManager.PasswordHasher.HashPassword(values, model.password);
+            var result = await _userManager.UpdateAsync(values);
+            return RedirectToAction("Index", "Dashboard");
         }
         [AllowAnonymous]
         [HttpGet]
@@ -111,5 +114,6 @@ namespace DotNetCoreCamp.Controllers
             wm.TAdd(w);
             return RedirectToAction("Index", "Dashboard");
         }
+
     }
 }

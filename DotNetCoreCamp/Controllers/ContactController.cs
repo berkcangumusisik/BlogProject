@@ -8,9 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DotNetCoreCamp.Controllers
 {
+    [AllowAnonymous]
     public class ContactController : Controller
     {
          ContactManager cm = new ContactManager(new EfContactRepository());

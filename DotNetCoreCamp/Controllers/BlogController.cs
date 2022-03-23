@@ -25,7 +25,7 @@ namespace DotNetCoreCamp.Controllers
             var values = bm.GetBlogListWithCategory();
             return View(values);
         }
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public IActionResult BlogReadAll(int id)
         {
             ViewBag.i = id;
@@ -35,7 +35,8 @@ namespace DotNetCoreCamp.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var usermail = User.Identity.Name;
+            var username = User.Identity.Name;
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             var values = bm.GetListWithCategoryByWriterBm(writerID);
             return View(values);
@@ -49,7 +50,8 @@ namespace DotNetCoreCamp.Controllers
         [HttpPost]
         public IActionResult BlogAdd(Blog blog)
         {
-            var usermail = User.Identity.Name;
+            var username = User.Identity.Name;
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             BlogValidator bv = new BlogValidator();
             ValidationResult results = bv.Validate(blog);
@@ -112,7 +114,8 @@ namespace DotNetCoreCamp.Controllers
         [HttpPost]
         public IActionResult EditBlog(Blog blog)
         {
-            var usermail = User.Identity.Name;
+            var username = User.Identity.Name;
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             BlogValidator bv = new BlogValidator();
             ValidationResult results = bv.Validate(blog);

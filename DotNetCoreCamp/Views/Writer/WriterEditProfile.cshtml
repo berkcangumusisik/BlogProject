@@ -1,52 +1,37 @@
-﻿@model EntityLayer.Concrete.Writer
+﻿@model UserUpdateViewModel
 @{
     ViewData["Title"] = "WriterEditProfile";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
 
-@using (Html.BeginForm("WriterEditProfile", "Writer", FormMethod.Post))
-{
-    <div class="col-12 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Yazar Profil Bilgileri Düzenleme Sayfası</h4>
-                <br />
-                @Html.HiddenFor(x => x.WriterID, new { @class = "form-control" })
-                <form class="forms-sample">
-                    <div class="form-group">
-                        <label for="exampleInputName1"> İsim Soyisim</label>
-                        @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail3">Mail Adresi</label>
-                        @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control" })
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword4">Şifre</label>
-                        @Html.PasswordFor(x => x.WriterPassword, new { @class = "form-control" })
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword4">Şifre</label>
-                        <input type="password" name="PasswordAgain" class="form-control" id="password2" placeholder="Şifrenizi Tekrar Giriniz" required="" />
-                    </div>
-                    <div class="form-group">
-                        <label>Yazar Görsel</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                            <input type="text" class="form-control file-upload-info" disabled placeholder="Resim Seç">
-                            <span class="input-group-append">
-                                <button class="file-upload-browse btn btn-gradient-primary" type="button">Resim Seç</button>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleTextarea1"> Hakkında </label>
-                        @Html.TextAreaFor(x => x.WriterAbout, 10, 3, new { @class = "form-control" })
-                    </div>
-                    <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
-                    <button class="btn btn-light">İptal</button>
-                </form>
-            </div>
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
+            <br />
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Adınız</label>
+                    <input type="text" asp-for="@Model.namesurname" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName2">Kullanıcı Adınız</label>
+                    <input type="text" asp-for="@Model.username" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Mail Adresiniz</label>
+                    <input type="text" asp-for="@Model.mail" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Yeni Şifreniz</label>
+                    <input type="password" asp-for="@Model.password" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Resim Yolunuz</label>
+                    <input type="text" asp-for="@Model.imageurl" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
+            </form>
         </div>
     </div>
-}
+</div>
