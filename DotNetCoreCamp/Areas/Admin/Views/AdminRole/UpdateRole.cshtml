@@ -1,0 +1,16 @@
+﻿@using DotNetCoreCamp.Models
+@model DotNetCoreCamp.Areas.Admin.Models.RoleUpdateViewModel
+@{
+    ViewData["Title"] = "UpdateRole";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Rol Düzenleme Sayfası</h1>
+<form method="post">
+    <div class="form-group">
+        <input type="hidden" name="Id" class="form-control" value="@Model.Id" />
+        <label>Rol Başlığı</label>
+        <input type="text" name="name" class="form-control" value="@Model.name" />
+    </div>
+    <button class="btn btn-success">Güncelle</button>
+</form>

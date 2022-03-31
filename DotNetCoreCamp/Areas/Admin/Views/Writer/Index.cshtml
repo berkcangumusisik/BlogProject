@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
@@ -11,19 +10,18 @@
 <button type="button" id="btnaddwriter" class="btn btn-outline-info">Yazar Ekle</button>
 <button type="button" id="btndeletewriter" class="btn btn-outline-danger">Yazar Sil</button>
 <button type="button" id="btnupdatewriter" class="btn btn-outline-warning">Yazar Güncelle</button>
-
-
 <br />
 <br />
 <div id="writerlist">
-    Buraya Yazarlar Gelecek
+    Buraya yazarlar gelecek
 </div>
 <br />
 <div id="writerget">
-    Buraya bir yazar gelecek
+
 </div>
+<br />
 <div>
-    <input type="text" id="writerid" placeholder="Yazar ID değerini giriniz..." class="form-control" />
+    <input type="text" id="writerid" placeholder="Yazar ID Değerini Giriniz!" class="form-control" />
 </div>
 <br />
 <div>
@@ -35,7 +33,6 @@
 <div>
     <input type="text" class="form-control" id="txtid" placeholder=" Silinecek Yazar ID" />
 </div>
-
 <br />
 <div>
     <input type="text" id="txtid1" class="form-control" placeholder="Güncellenecek ID" />
@@ -43,7 +40,9 @@
     <input type="text" id="txtwritername1" class="form-control" placeholder="Güncellenecek İsim" />
 </div>
 <br />
-@section scripts
+
+
+@section Scripts
 {
     <script>
         $("#btngetlist").click(function () {
@@ -55,17 +54,15 @@
                 success: function (func) {
                     let w = jQuery.parseJSON(func);
                     console.log(w);
-                    let tablehtml = "<table class=table table-bordered> <tr><th>Yazar ID</th> <th>Yazar Adı</th></tr>";
-                    $.each(w,
-                        (index, value) => {
-                            tablehtml += `<tr><td>${value.Id}</td><td>${value.Name}</td></tr>`
-                        });
+                    let tablehtml = "<table class=table table-bordered> <tr><th> Yazar ID</th> <th> Yazar Adı </th>  </tr>";
+                    $.each(w, (index, value) => {
+                        tablehtml += `<tr><td>${value.Id}</td> <td>${value.Name}</td></tr>`
+                    });
                     tablehtml += "</table>";
                     $("#writerlist").html(tablehtml);
                 }
             });
         });
-
         $("#btngetbyid").click(x => {
             let id = $("#writerid").val();
             $.ajax({
@@ -77,12 +74,10 @@
                 success: function (func) {
                     let w = jQuery.parseJSON(func);
                     console.log(w);
-
-                    let getValue = `<table class=table table-bordered> <tr><th>Yazar ID</th> <th>Yazar Adı</th></tr> <tr><td>${w.Id}</td><td>${w.Name}</td></tr></table>`;
-                    $("#writerget").html(getValue);
+                    let getvalue = `<table class=table table-bordered> <tr><th>Yazar ID</th> <th>Yazar Adı</th></tr> <tr><td>${w.Id}</td><td>${w.Name}</td></tr></table>`;
+                    $("#writerget").html(getvalue);
                 }
             });
-
         });
         $("#btnaddwriter").click(function () {
             let writer = {
@@ -120,7 +115,7 @@
                 url: "/Admin/Writer/UpdateWriter/",
                 data: writer,
                 success: function (funk) {
-                    alert("Yazar Güncelleme İşlemi Başarılı Bir Şekilde Gerçekleşti!");
+                    alert("Güncelleme Yapıldı.");
                 }
             });
         });

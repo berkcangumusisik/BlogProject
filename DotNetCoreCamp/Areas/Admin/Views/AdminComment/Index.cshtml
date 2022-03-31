@@ -1,0 +1,114 @@
+﻿@using EntityLayer.Concrete
+@model List<Comment>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@{
+    string renk = "";
+}
+
+
+@*<td><a href="#"><i class="fa fa-check text-navy"></i></a></td>*@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Yorumlar</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Kullanıcı</th>
+                                    <th>Başlık</th>
+                                    <th>Blog</th>
+                                    <th>Puan</th>
+                                    <th>Tarih</th>
+                                    <th>Sil</th>
+                                    <th>Düzenle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    if (item.BlogScore == 0)
+                                    {
+                                        renk = "text-danger";
+                                    }
+                                    if (item.BlogScore == 1)
+                                    {
+                                        renk = "text-danger";
+                                    }
+                                    if (item.BlogScore == 2)
+                                    {
+                                        renk = "text-danger";
+                                    }
+                                    if (item.BlogScore == 3)
+                                    {
+                                        renk = "text-danger";
+                                    }
+                                    if (item.BlogScore == 4)
+                                    {
+                                        renk = "text-warning";
+                                    }
+                                    if (item.BlogScore == 5)
+                                    {
+                                        renk = "text-warning";
+                                    }
+                                    if (item.BlogScore == 6)
+                                    {
+                                        renk = "text-warning";
+                                    }
+                                    if (item.BlogScore == 7)
+                                    {
+                                        renk = "text-success";
+                                    }
+                                    if (item.BlogScore == 8)
+                                    {
+                                        renk = "text-success";
+                                    }
+                                    if (item.BlogScore == 9)
+                                    {
+                                        renk = "text-navy";
+                                    }
+                                    if (item.BlogScore == 10)
+                                    {
+                                        renk = "text-navy";
+                                    }
+                                    <tr>
+                                        <th>@item.CommentID</th>
+                                        <td>@item.CommentUserName</td>
+                                        <td>@item.CommentTitle</td>
+                                        <td>@item.Blog.BlogTitle</td>
+                                        <td class="@renk"> <i class="fa fa-level-up"></i> @item.BlogScore </td>
+                                        <td><span class="pie"></span>@(((DateTime)item.CommentDate).ToString("dd MMMM yyyy"))</td>
+                                        <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+                                        <td><a href="#" class="btn btn-outline-success">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -14,36 +14,35 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using X.PagedList;
 namespace DotNetCoreCamp.Areas.Admin.Controllers
 {
-    [AllowAnonymous]
     [Area("Admin")]
+    [Authorize(Roles = "Admin,Moderator")]
+
     public class CategoryController : Controller
     {
         CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
-        Context c = new Context();
-
         public IActionResult Index(int page = 1)
         {
-            var values = categoryManager.GetList().ToPagedList(page, 5);
+            var values = categoryManager.GetList().ToPagedList(page, 3);
             return View(values);
         }
-        
         [HttpGet]
         public IActionResult AddCategory()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult AddCategory(Category category)
+        public IActionResult AddCategory(Category p)
         {
-            CategoryValidator cv = new CategoryValidator();
-            ValidationResult results = cv.Validate(category);
+
+            CategoryValidator categoryValidator = new CategoryValidator();
+            ValidationResult results = categoryValidator.Validate(p);
             if (results.IsValid)
             {
-                category.CategoryStatus = false;
-                categoryManager.TAdd(category);
+                p.CategoryStatus = true;
+                categoryManager.TAdd(p);
                 return RedirectToAction("Index", "Category");
             }
-            else if (!results.IsValid)
+            else
             {
                 foreach (var item in results.Errors)
                 {
@@ -51,9 +50,7 @@ namespace DotNetCoreCamp.Areas.Admin.Controllers
                 }
             }
             return View();
-
         }
-
         public IActionResult CategoryDelete(int id)
         {
             var value = categoryManager.TGetByID(id);

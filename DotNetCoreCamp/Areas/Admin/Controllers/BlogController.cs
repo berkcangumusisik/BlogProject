@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 using ClosedXML.Excel;
 using DataAccessLayer.Concrete;
 using DotNetCoreCamp.Areas.Admin.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DotNetCoreCamp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,Moderator")]
+
     public class BlogController : Controller
     {
         public IActionResult ExportStaticExcelBlogList()

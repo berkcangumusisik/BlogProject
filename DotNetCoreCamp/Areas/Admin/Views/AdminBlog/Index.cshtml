@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                <div class="ibox">
+                    <div class="ibox-content product-box">
+
+                        <div>
+                            <img src="@item.BlogThumbNailImage" height="225" width="275" />
+                        </div>
+                        <div class="product-desc">
+                            <span class="product-price">
+                                @(((DateTime)item.BlogCreateDate).ToString("dd MMMM yyyy"))
+                            </span>
+                            <small class="text-muted">@item.Category.CategoryName</small>
+                            <a href="/Blog/BlogReadAll/@item.BlogID" class="product-name"> @item.BlogTitle</a>
+
+
+
+                            <div class="small m-t-xs">
+                                @item.BlogContent.Substring(0, item.BlogContent.Substring(0, 100).LastIndexOf(" "))...
+                            </div>
+                            <div class="m-t text-righ">
+                                <a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-xs btn-outline btn-primary">Detaylar <i class="fa fa-long-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+</body>
+</html>

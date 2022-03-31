@@ -15,6 +15,7 @@ using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Http;
 
 namespace DotNetCoreCamp
 {
@@ -63,7 +64,7 @@ namespace DotNetCoreCamp
                 //Cookie settings
                 options.Cookie.HttpOnly = true;
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(50);
-
+                options.AccessDeniedPath = new PathString("/Login/AccesDenied");
                 options.LoginPath = "/Login/Index/";
                 options.SlidingExpiration = true;
             });

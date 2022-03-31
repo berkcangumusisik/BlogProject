@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DotNetCoreCamp.Areas.Admin.Models;
+using Microsoft.AspNetCore.Authorization;
 using Newtonsoft.Json;
 
 namespace DotNetCoreCamp.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
+    [Authorize(Roles = "Admin,Moderator")]
+
     public class WriterController : Controller
     {
         public IActionResult Index()
